@@ -1,8 +1,8 @@
 package kadai_014;
 
 public class CarChapter14 {
-	    public int gear = 0; //ギアを示す
-		public int speed = 0; //ギアチェンジ後の速度
+	    private int gear = 0; //ギアを示す
+		private int speed = 0; //ギアチェンジ後の速度
 
 
 	public  void gearChange(final int afterGear) {
