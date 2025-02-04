@@ -7,8 +7,6 @@ public class DictonaryExecChapter21 {
         
     	String [] kudamonoArray = {"apple","banana","grape","orange"};
     	
-    	for(String kudamono : kudamonoArray) {
-    		dictionary.word(kudamono);
-    	}
-    }    
+        dictionary.word(kudamonoArray);
+    }   
 }

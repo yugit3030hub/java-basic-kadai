@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class DictionaryChapter20 {
 	
-	public void word(String EnglishWord) {
+	public void word(String [] Englishword) {
 		
 		HashMap<String,String> dictionary = new HashMap<String,String>();
 	
@@ -19,11 +19,13 @@ public class DictionaryChapter20 {
 		dictionary.put("muscat","マスカット");
 		dictionary.put("cherry","さくらんぼ");
 		
-	if(dictionary.containsKey(EnglishWord)) {
-		System.out.println(EnglishWord + "の意味は" + dictionary.get(EnglishWord) );
-	} else {
-		System.out.println(EnglishWord + "は辞書に存在しません");
-	}
+		for(int i = 0; i < Englishword.length; i++) {
+			if(dictionary.containsKey(Englishword[i])) {
+				System.out.println(Englishword[i] + "の意味は" + dictionary.get(Englishword[i]));
+			} else {
+				System.out.println(Englishword[i] + "は辞書に含まれていません");
+			}
+		}
 	
 	}
 }
